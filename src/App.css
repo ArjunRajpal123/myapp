@@ -1,0 +1,46 @@
+/*Controls Text Colors*/
+.App {
+  text-align: center;
+  color: white;
+  background-color: white;
+}
+
+.bar {
+  display: flex;
+}
+
+
+/*Controls Title/Brand Text Colors*/
+/*use id = to identifiy with hashtags*/
+
+#subtabStyle{
+	background-color: #4a17e2;
+	font-family: 'Merriweather';
+  text-align: center;
+  color: white;
+  border-radius: 25px;
+  align-items: flex;
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+  
+}
+
+#calStyle{
+  align-items:center;
+  background-color: #4008e7;
+  border-radius: 20;
+  border-width: 400px;
+}
+
+#brand{
+	color: white;
+  font-size: 40px;
+  font-family: 'Merriweather';
+  
+}
+
+#title{
+	background-color: #282828;
+  
+}
