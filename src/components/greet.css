@@ -1,0 +1,11 @@
+.main {
+    background-color: #DAAD86;
+	font-family: 'Merriweather';
+  text-align: center;
+  color: black;
+  border-radius: 25px;
+  align-items: flex;
+  padding: 20px;
+  height:fit-content;
+  
+}

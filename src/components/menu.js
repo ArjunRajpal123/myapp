@@ -1,6 +1,7 @@
 import React from 'react';
 import { Media } from 'reactstrap';
-import './media.css';
+import { PLACES } from '../shared/places';
+
 
 class Menu extends React.Component {
 	constructor(props){

@@ -1,18 +1,19 @@
 import React from 'react';
-import './greet.css'
+import { PLACES } from '../shared/places';
+import Menu from './menu';
 
-class Greet extends React.Component {
+class Work extends React.Component {
 	
 	constructor(props){
 		super(props);
 		
-		this.state = {val: " "};
+		this.state = {val: " ", text: "", places: PLACES};
 	}
 	
 	
 	changeValue = () => {
 		this.setState(
-			{val: "to My Personal Website"}
+			{text: "Here is all my work experience"}
 			);
 		}
 
@@ -24,8 +25,10 @@ class Greet extends React.Component {
 	
 	render(){
 		return(
-			<div className='main'>
-				<h1>Welcome {this.state.val} </h1>
+			<div>
+				<h1>Work Experience </h1>
+				<h6>{this.state.text}</h6>
+				<Menu places={this.state.places}/>
 				<button type="button" onClick={this.changeValue}>Expand</button>
 				<button type="button" onClick={this.changeValue2}>Shrink</button>
 			</div>
@@ -34,4 +37,4 @@ class Greet extends React.Component {
 }
 
 
-export default Greet;
+export default Work;

@@ -9,15 +9,52 @@
   display: flex;
 }
 
+.sideTab {
+  background-color: #659DBD;
+	font-family: 'Merriweather';
+  text-align: center;
+  color: black;
+  border-radius: 25px;
+  align-items: flex;
+  padding: 20px;
+  height:fit-content;
+  
+}
+
+.center {
+  background-color: #659DBD;
+	font-family: 'Merriweather';
+  text-align: center;
+  color: black;
+  border-radius: 25px;
+  align-items: flex;
+  padding: 20px;
+  height:fit-content;
+  width:auto;
+  
+}
+
+.centerBlock {
+  background-color: #659DBD;
+	font-family: 'Merriweather';
+  text-align: center;
+  color: black;
+  border-radius: 25px;
+  align-items: flex;
+  padding: 20px;
+  height:fit-content;
+  width: max-content;
+}
+
 
 /*Controls Title/Brand Text Colors*/
 /*use id = to identifiy with hashtags*/
 
 #subtabStyle{
-	background-color: #4a17e2;
+	background-color: white;
 	font-family: 'Merriweather';
   text-align: center;
-  color: white;
+  color: black;
   border-radius: 25px;
   align-items: flex;
   padding: 20px;
@@ -35,12 +72,16 @@
 
 #brand{
 	color: white;
-  font-size: 40px;
+  background-color: #659DBD;
+  font-size:xx-large;
   font-family: 'Merriweather';
-  
+  border-radius: 25px;
+  align-items: flex;
 }
 
 #title{
-	background-color: #282828;
+	background-color: #DAAD86;
+  align-items: flex-end;
+  width: fill;
   
 }
