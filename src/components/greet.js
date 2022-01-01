@@ -1,33 +1,39 @@
 import React from 'react';
-import './greet.css'
+import cButton from './cleanButton';
+import './comp.css'
 
 class Greet extends React.Component {
-	
-	constructor(props){
+
+	constructor(props) {
 		super(props);
-		
-		this.state = {val: " "};
+
+		this.state = { val: " " };
 	}
-	
-	
+
+
+
+
 	changeValue = () => {
 		this.setState(
-			{val: "to My Personal Website"}
-			);
-		}
+			{ val: "to My Personal Website" }
+		);
+	}
 
 	changeValue2 = () => {
 		this.setState(
-			{val: " "}
-			);
-		}
-	
-	render(){
-		return(
-			<div className='main'>
+			{ val: " " }
+		);
+	}
+
+
+
+	render() {
+		return (
+			<div className='divSec'>
 				<h1>Welcome {this.state.val} </h1>
-				<button type="button" onClick={this.changeValue}>Expand</button>
-				<button type="button" onClick={this.changeValue2}>Shrink</button>
+				<cButton name="hi" className='button' />
+				<button type="button" onClick={this.changeValue} className='button'>+</button>
+				<button type="button" onClick={this.changeValue2} className='button'>-</button>
 			</div>
 		);
 	}

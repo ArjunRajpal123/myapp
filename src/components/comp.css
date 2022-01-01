@@ -1,0 +1,50 @@
+.aboutMeStyle {
+    text-align: center;
+    color: white;
+    background-color: #282828;
+}
+
+.button {
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+    font-optical-sizing: initial;
+    border-radius: 30px;
+    padding: 0px;
+    background-color: white;
+    color: black;
+    width: 30px;
+}
+
+.divSec {
+    background-color: white;
+    font-family: 'Merriweather';
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    align-items: flex;
+    padding: 20px;
+    height: fit-content;
+}
+
+
+.compactSec {
+    background-color: white;
+    font-family: 'Merriweather';
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    align-items: flex;
+    padding: 20px;
+    height: fit-content;
+}
+
+
+/**/
+
+#unit {
+    background-color: white;
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 30px;
+}

@@ -2,9 +2,8 @@ import React from 'react';
 import Projects from './projects';
 import { PROJ } from '../shared/projects';
 import { BLANK } from '../shared/blank';
-import './comp.css'
 
-class About extends React.Component {
+class CourseWork extends React.Component {
 
 	constructor(props) {
 		super(props);
@@ -28,7 +27,7 @@ class About extends React.Component {
 	render() {
 		return (
 			<div className='divSec'>
-				<h1>About Me</h1>
+				<h1>CourseWork and Education</h1>
 				<h6>{this.state.text}</h6>
 				<Projects project={this.state.project} />
 				<button type="button" onClick={this.changeValue} className='button'>+</button>
@@ -39,4 +38,4 @@ class About extends React.Component {
 }
 
 
-export default About;
+export default CourseWork;
