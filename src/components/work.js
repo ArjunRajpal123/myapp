@@ -2,26 +2,27 @@ import React from 'react';
 import { PLACES } from '../shared/places';
 import Menu from './menu';
 import { BLANK } from '../shared/blank';
+import { FaArrowUp, FaArrowDown, FaUps } from 'react-icons/fa';
 
 class Work extends React.Component {
 
 	constructor(props) {
 		super(props);
 
-		this.state = { val: " ", text: "", places: BLANK };
+		this.state = { val: " ", text: "", work: BLANK, isUp: true };
 	}
 
 
-	changeValue = () => {
-		this.setState(
-			{ text: "I currently do not have any work experience but, I look forward to adding some soon." }
-		);
-	}
-
-	changeValue2 = () => {
-		this.setState(
-			{ text: " " }
-		);
+	wrapperFunk = () => {
+		if (this.state.isUp) {
+			this.setState(
+				{ val: " ", work: BLANK, isUp: false }
+			);
+		} else {
+			this.setState(
+				{ text: "Input Info About Me Here", work: BLANK, isUp: true }
+			);
+		}
 	}
 
 	render() {
@@ -30,16 +31,15 @@ class Work extends React.Component {
 				<div className='divSec2'>
 					<div className='divSec3'>
 						<div className='titleText'>
-							<h1>Work Experience </h1>
+							<h2>Work Experience </h2>
 						</div>
-						
+
 					</div>
-					<div className='buttonContainer'>
-							<button type="button" onClick={this.changeValue} className='button'>+</button>
-							<button type="button" onClick={this.changeValue2} className='button'>-</button>
-						</div>
-						<h6>{this.state.text}</h6>
-					<Menu places={this.state.places} />
+					<button className="buttonStyle" onClick={this.wrapperFunk}>
+						{this.state.isUp ? <FaArrowDown /> : <FaArrowUp />}
+					</button>
+					<h6>{this.state.text}</h6>
+					<Menu places={this.state.work} />
 
 				</div>
 			</div>

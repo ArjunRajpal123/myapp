@@ -62,7 +62,6 @@ class App extends React.Component {
 
             <Contact />
             <div className='container'>
-              <SocialIcon url="https://instagram.com/notarjunr" />
               <SocialIcon url="http://www.linkedin.com/in/arjun-rajpal" />
               <SocialIcon url="https://github.com/ArjunRajpal123" />
             </div>
@@ -76,10 +75,10 @@ class App extends React.Component {
 
               <Zoom>
                 <About />
-                <Prog />
-                <Work />
-                <CourseWork />
                 <Outside />
+                <Prog />
+                <CourseWork />
+                <Work/>
               </Zoom>
 
 

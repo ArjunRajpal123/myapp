@@ -31,7 +31,6 @@
     text-align: center;
     font-size: small;
     align-items: flex-start;
-    
     font-weight: bold;
     font-optical-sizing: initial;
     border-radius: 30px;
@@ -39,6 +38,19 @@
     background-color: white;
     color: black;
     width: 30px;
+}
+
+.buttonStyle {
+    text-align: center;
+    font-size: medium;
+    align-items: center;
+    font-weight: bold;
+    font-optical-sizing: initial;
+    background-color: lightgray;
+    border-radius: 10px;
+    border-color: lightgrey;
+    color: rgb(0, 0, 0);
+    width: 10%;
 }
 
 .divBoarder{

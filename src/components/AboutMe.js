@@ -16,34 +16,24 @@ class AboutText extends React.Component {
 
         const proj = this.props.project.map((project) => {
             return (
-                <div key={project.id} id="unit" className="col-12 mt-5">
-                    <Media tag="li">
-                        <Media left>
-                            <Media object src={project.image} alt={project.name} />
-                        </Media>
-                        <Media body className="ml-3">
-                            <Zoom className='aboutMeStyle'>
-                                
-                                
-                                <div className='aboutMeStyle2'><strong></strong>{project.description}</div>
-                                
+                < div key={project.id} id="unit" className="col-12 mt-5" >
+                    <Media tag="li" >
+                        <Media left >
+                            <Media object src={project.image} alt={project.name} /> </Media > <Media body className="ml-3" >
+                            <Zoom className='aboutMeStyle' >
+                                <div className='aboutMeStyle2' > < strong > </strong>{project.description}</div >
                             </Zoom>
-                        </Media>
-
+                        </Media >
                     </Media>
-                </div>
+                </div >
             );
         });
 
-        return (
-            <div className="container">
-                <div className="row">
-                
-                    <Media list  >
-                        {proj}
-                    </Media>
-                </div>
-            </div>
+        return (<div className="container" >
+            <div className="row" >
+                <Media list > {proj} </Media>
+            </div >
+        </div>
         );
     }
 }

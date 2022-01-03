@@ -1,26 +1,46 @@
 import React from "react";
-import { Button } from "reactstrap";
+
+import { Media } from "reactstrap";
 import './comp.css'
+import { IconContext } from "react-icons"
+import { FaArrowUp, FaArrowDown } from "react-icons/fa"
 
 
-class cButton extends React.Component {
-    constructor() {
-        super(this.props);
-        this.state = { name: "hit" };
+const count = 0;
+
+
+export default class Button extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = { isCardView:true, count:0}
     }
+
+    
+
+    wrapFunc = () => {
+        
+        if(this.state.isCardView){
+            this.setState(
+                { isCardView: false}
+            );
+        }else{
+            
+            this.setState(
+                { isCardView: true}
+            );
+        }
+        
+    }
+
 
 
     render() {
+
         return (
-
-            <button type="button" className='button'>
-                helloButton
+            <button className="buttonStyle" onClick={this.wrapFunc} >
+                
             </button>
-
-
         );
     }
 
-}
-
-export default cButton;
+};

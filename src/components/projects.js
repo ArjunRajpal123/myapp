@@ -15,12 +15,13 @@ class Projects extends React.Component {
 
         const proj = this.props.project.map((project) => {
             return (
-                <div key={project.id} id="unit" className="col-12 mt-5">
+                <div key={project.id} id="unit" className="aboutMeStyle2">
                     <Media tag="li">
                         <Media left>
                             <Media object src={project.image} alt={project.name} />
                         </Media>
-                        <Media body className="ml-3">
+                        
+                        <Media body className="aboutStyle2">
                             <Zoom>
                                 <Media heading><strong>{project.name}</strong></Media>
                                 <div><strong>Location Type - </strong>{project.category}</div>
@@ -30,6 +31,7 @@ class Projects extends React.Component {
                         </Media>
 
                     </Media>
+                    
                 </div>
             );
         });

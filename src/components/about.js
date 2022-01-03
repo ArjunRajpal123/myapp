@@ -12,19 +12,19 @@ class About extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.state = { val: " ", text: "", project: ABOUT };
+		this.state = { val: " ", text: "", project: ABOUT, isUp:true };
 	}
 
 
 	changeValue = () => {
 		this.setState(
-			{ text: " ", project: BLANK }
+			{ text: " ", project: BLANK, isUp:true }
 		);
 	}
 
 	changeValue2 = () => {
 		this.setState(
-			{ val: " ", project: ABOUT }
+			{ val: " ", project: ABOUT, isUp:false }
 		);
 	}
 

@@ -2,13 +2,14 @@ import React from 'react';
 import Projects from './projects';
 import { PROJ } from '../shared/projects';
 import { BLANK } from '../shared/blank';
+import { FaArrowUp, FaArrowDown, FaUps } from 'react-icons/fa';
 
 class CourseWork extends React.Component {
 
 	constructor(props) {
 		super(props);
 
-		this.state = { val: " ", text: "", project: BLANK };
+		this.state = { val: " ", text: "", project: BLANK, isUp:true };
 	}
 
 
@@ -24,23 +25,34 @@ class CourseWork extends React.Component {
 		);
 	}
 
+	wrapperFunk = () => {
+		if(this.state.isUp){
+			this.setState(
+				{ val: " ", project: PROJ, isUp:false }
+			);
+		}else{
+			this.setState(
+				{ text: "Input Info About Me Here", project: BLANK, isUp:true }
+			);
+		}
+	}
+
 	render() {
 		return (
 			<div className='divBoarder'>
 				<div className='divSec2'>
 					<div className='divSec3'>
 						<div className='titleText'>
-							<h1>Education</h1>
+							<h2>Education</h2>
 						</div>
-						<div className='buttonContainer'>
-						<button type="button" onClick={this.changeValue} className='button'>+</button>
-						<button type="button" onClick={this.changeValue2} className='button'>-</button>
+						<button className="buttonStyle" onClick={this.wrapperFunk}>
+							{this.state.isUp ? <FaArrowDown /> : <FaArrowUp />}
+						</button>
 					</div>
-					</div>
-					
+
 
 					<Projects project={this.state.project} />
-					
+
 
 				</div>
 			</div>
