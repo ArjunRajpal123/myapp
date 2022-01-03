@@ -30,10 +30,8 @@ class Greet extends React.Component {
 	render() {
 		return (
 			<div className='divSec'>
-				<h1>Welcome {this.state.val} </h1>
+				<h1>Welcome to My Personal Website {this.state.val} </h1>
 				<cButton name="hi" className='button' />
-				<button type="button" onClick={this.changeValue} className='button'>+</button>
-				<button type="button" onClick={this.changeValue2} className='button'>-</button>
 			</div>
 		);
 	}

@@ -26,12 +26,28 @@ class Prog extends React.Component {
 
 	render() {
 		return (
-			<div className='divSec'>
-				<h1>Skill Set</h1>
-				<h6>{this.state.text}</h6>
-				<Projects project={this.state.project} />
-				<button type="button" onClick={this.changeValue} className='button'>+</button>
-				<button type="button" onClick={this.changeValue2} className='button'>-</button>
+
+			<div className='divBoarder'>
+				<div className='divSec2'>
+
+					<div className='divSec3'>
+						<div className='titleText'>
+							<h1>Skill Set</h1>
+						</div>
+						<div className='buttonContainer'>
+							<button type="button" onClick={this.changeValue} className='button'>+</button>
+							<button type="button" onClick={this.changeValue2} className='button'>-</button>
+						</div>
+					</div>
+
+
+
+					<Projects project={this.state.project} />
+
+
+
+				</div>
+
 			</div>
 		);
 	}

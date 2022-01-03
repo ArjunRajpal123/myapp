@@ -26,12 +26,23 @@ class Outside extends React.Component {
 
 	render() {
 		return (
-			<div className='divSec'>
-				<h1>Other Projects and Hobbies</h1>
-				<h6>{this.state.text}</h6>
-				<Projects project={this.state.project} />
-				<button type="button" onClick={this.changeValue} className='button'>+</button>
-				<button type="button" onClick={this.changeValue2} className='button'>-</button>
+			<div className='divBoarder'>
+				<div className='divSec2'>
+					<div className='divSec3'>
+
+						<h1>Other Projects and Hobbies</h1>
+						
+
+						<div className='buttonContainer'>
+							<button type="button" onClick={this.changeValue} className='button'>+</button>
+							<button type="button" onClick={this.changeValue2} className='button'>-</button>
+						</div>
+					</div>
+
+					<Projects project={this.state.project} />
+
+
+				</div>
 			</div>
 		);
 	}

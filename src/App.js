@@ -59,7 +59,7 @@ class App extends React.Component {
         <div className='bar'>
 
           <div className='sideTab'>
-           
+
             <Contact />
             <div className='container'>
               <SocialIcon url="https://instagram.com/notarjunr" />
@@ -75,12 +75,11 @@ class App extends React.Component {
             <div className='centerBlock'>
 
               <Zoom>
-                <Greet/>
-                <About/>
-                <Prog/>
-                <Work/>
-                <CourseWork/>
-                <Outside/>
+                <About />
+                <Prog />
+                <Work />
+                <CourseWork />
+                <Outside />
               </Zoom>
 
 

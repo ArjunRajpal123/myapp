@@ -17,10 +17,15 @@ class Contact extends React.Component {
         return (
             <div className='compactSec'>
                 <h1>Contact Info</h1>
+                <div>
                 <h8>{this.state.PersonalEmail}</h8>
-                <h8></h8>
+                </div>
+                <div>
                 <h8>{this.state.SchoolEmail}</h8>
-                <h8>{this.state.Phone}</h8>
+                </div>
+                <div> <h8>{this.state.Phone}</h8> </div>
+                
+               
             </div>
         );
     }
