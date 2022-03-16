@@ -1,35 +1,20 @@
 export const PROJ = 
 	[
-			{
-				id: 0,
-				name: 'R',
-				image: 'assets/R.jpg',
-				category: 'Programming Language - (2 Years)',
-				description: 'The fact that R is a language may deter some users who think “I can’t program”. This should not be the case for two reasons. First, R is an interpreted language, not a compiled one, meaning that all commands typed on the keyboard are directly executed without requiring to build a complete program like in most computer languages (C, Fortran, Pascal, . . .). Second, R’s syntax is very simple and intuitive. For instance, a linear regression can be done with the command lm(y ~ x) which means “fitting a linear model with y as response and x as predictor”. In R, in order to be executed, a function always needs to be written with parentheses, even if there is nothing within them (e.g., ls()). If one just types the name of a function without parentheses, R will display the content of the function. In this document, the names of the functions are generally written with parentheses in order to distinguish them from other objects, unless the text indicates clearly so.',
-				source: 'R textbook'
-			},
-			{
-				id: 1,
-				name: 'JAVA',
-				image: 'assets/Java.jpg',
-				category: 'Programming Language - (3 Years)',
-				description: 'The fact that R is a language may deter some users who think “I can’t program”. This should not be the case for two reasons. First, R is an interpreted language, not a compiled one, meaning that all commands typed on the keyboard are directly executed without requiring to build a complete program like in most computer languages (C, Fortran, Pascal, . . .). Second, R’s syntax is very simple and intuitive. For instance, a linear regression can be done with the command lm(y ~ x) which means “fitting a linear model with y as response and x as predictor”. In R, in order to be executed, a function always needs to be written with parentheses, even if there is nothing within them (e.g., ls()). If one just types the name of a function without parentheses, R will display the content of the function. In this document, the names of the functions are generally written with parentheses in order to distinguish them from other objects, unless the text indicates clearly so.',
-				source: 'R textbook'
-			},
-			{
-				id: 2,
-				name: 'R1',
-				image: 'assets/R.jpg',
-				category: 'Programming Language - (2 Years)',
-				description: 'The fact that R is a language may deter some users who think “I can’t program”. This should not be the case for two reasons. First, R is an interpreted language, not a compiled one, meaning that all commands typed on the keyboard are directly executed without requiring to build a complete program like in most computer languages (C, Fortran, Pascal, . . .). Second, R’s syntax is very simple and intuitive. For instance, a linear regression can be done with the command lm(y ~ x) which means “fitting a linear model with y as response and x as predictor”. In R, in order to be executed, a function always needs to be written with parentheses, even if there is nothing within them (e.g., ls()). If one just types the name of a function without parentheses, R will display the content of the function. In this document, the names of the functions are generally written with parentheses in order to distinguish them from other objects, unless the text indicates clearly so.',
-				source: 'R textbook'
-			},
-			{
-				id: 3,
-				name: 'JAVA2',
-				image: 'assets/Java.jpg',
-				category: 'Programming Language - (3 Years)',
-				description: 'The fact that R is a language may deter some users who think “I can’t program”. This should not be the case for two reasons. First, R is an interpreted language, not a compiled one, meaning that all commands typed on the keyboard are directly executed without requiring to build a complete program like in most computer languages (C, Fortran, Pascal, . . .). Second, R’s syntax is very simple and intuitive. For instance, a linear regression can be done with the command lm(y ~ x) which means “fitting a linear model with y as response and x as predictor”. In R, in order to be executed, a function always needs to be written with parentheses, even if there is nothing within them (e.g., ls()). If one just types the name of a function without parentheses, R will display the content of the function. In this document, the names of the functions are generally written with parentheses in order to distinguish them from other objects, unless the text indicates clearly so.',
-				source: 'R textbook'
-			}
+		{
+			id: 0,
+			name: 'Web Development - This Webpage ',
+			tools: 'React.js, CSS, HTML',
+			image: 'assets/webdev2.jpeg',
+			category: 'React.js, CSS, HTML',
+			description: 'This entire webpage was a project I took on during the winter break of my sophomore year of university (winter 2021/early 2022). My main objective was to design, implement, and deploy a simple web app in order to display my personal info (like an abridged resume of sorts) and to learn how to use React given the knowledge I had about React Native. If you are reading this, it is safe to say that I have accomplished both tasks. Technical Note/Summary: This page was built using React.js/JavaScript and it is hosted via GitHub pages.',
+			source: 'R textbook'
+		},
+		{
+			id: 1,
+			name: 'Mobile App Development (ToDoApp)',
+			image: 'assets/toDo.jpg',
+			category: 'React Native',
+			description: 'Simply put, I built simple todo list app using React Native during the spring semester of my freshman year of college (Spring 2021). Currently it is published on the google play store but, it is not published on the apple app store because I didn’t own a Mac at the time so I was not able to compile it for a Mac release. This project served as an important stepping stone into my current passion of web development and learning more about how the backend works. ',
+			source: 'R textbook'
+		}
 	];

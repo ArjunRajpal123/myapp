@@ -17,11 +17,17 @@ class AboutText extends React.Component {
         const proj = this.props.project.map((project) => {
             return (
                 < div key={project.id} id="unit" className="col-12 mt-5" >
-                    <Media tag="li" >
+                    <Media  >
                         <Media left >
                             <Media object src={project.image} alt={project.name} /> </Media > <Media body className="ml-3" >
                             <Zoom className='aboutMeStyle' >
+                            <h2>About Me</h2>
                                 <div className='aboutMeStyle2' > < strong > </strong>{project.description}</div >
+                                <div>
+                                <h2> Current Projects</h2>
+                                <div className='aboutMeStyle2' > < strong > </strong>{project.subnote}</div >
+                                </div>
+                                
                             </Zoom>
                         </Media >
                     </Media>

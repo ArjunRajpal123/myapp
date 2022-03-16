@@ -9,18 +9,18 @@ class Work extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.state = { val: " ", text: "", work: BLANK, isUp: true };
+		this.state = { val: " ", text: "No Software Engineering Experience", work: BLANK, isUp: false };
 	}
 
 
 	wrapperFunk = () => {
-		if (this.state.isUp) {
+		if (!this.state.isUp) {
 			this.setState(
-				{ val: " ", work: BLANK, isUp: false }
+				{ text: " ", work: BLANK, isUp: true }
 			);
 		} else {
 			this.setState(
-				{ text: "Input Info About Me Here", work: BLANK, isUp: true }
+				{ text: "No Software Engineering Experience", work: BLANK, isUp: false }
 			);
 		}
 	}

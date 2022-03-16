@@ -17,20 +17,27 @@ class Projects extends React.Component {
             return (
                 <div key={project.id} id="unit" className="aboutMeStyle2">
                     <Media tag="li">
+                    
                         <Media left>
                             <Media object src={project.image} alt={project.name} />
                         </Media>
                         
                         <Media body className="aboutStyle2">
                             <Zoom>
-                                <Media heading><strong>{project.name}</strong></Media>
-                                <div><strong>Location Type - </strong>{project.category}</div>
-                                <div><strong>Info - </strong>{project.description}</div>
-                                <div>Info source - {project.source}</div>
+                                <div className='titleText2'>
+                                <Media heading><strong><h2 className='titleText2'>{project.name}</h2></strong></Media>
+                                <div>    </div>
+                                <div><strong></strong>{project.category}</div>
+                                <div><strong> </strong><h4>{project.description}</h4></div>
+                                <div> </div>
+                                </div>
+                                <li></li>
+                                
                             </Zoom>
                         </Media>
 
                     </Media>
+                    
                     
                 </div>
             );

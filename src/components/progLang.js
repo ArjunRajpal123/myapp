@@ -1,6 +1,7 @@
 import React from 'react';
 import Projects from './projects';
 import { PROJ } from '../shared/projects';
+import { LANG } from '../shared/languages';
 import { BLANK } from '../shared/blank';
 import { FaArrowUp, FaArrowDown, FaUps } from 'react-icons/fa';
 
@@ -10,17 +11,17 @@ class Prog extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.state = { val: " ", text: "", project: BLANK, isUp:true };
+		this.state = { val: " ", text: "", project: LANG, isUp:false };
 	}
 
 	wrapperFunk = () => {
-		if(this.state.isUp){
+		if(!this.state.isUp){
 			this.setState(
-				{ val: " ", project: PROJ, isUp:false }
+				{ val: " ", project: BLANK, isUp:true }
 			);
 		}else{
 			this.setState(
-				{ text: "Input Info About Me Here", project: BLANK, isUp:true }
+				{ text: "Input Info About Me Here", project: LANG, isUp:false }
 			);
 		}
 	}

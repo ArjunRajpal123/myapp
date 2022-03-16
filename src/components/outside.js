@@ -11,7 +11,7 @@ class Outside extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.state = { val: " ", text: "", project: BLANK, Media: "HI", isCardView: true };
+		this.state = { val: " ", text: "", project: PROJ, Media: "HI", isCardView: false };
 	}
 
 
@@ -21,20 +21,20 @@ class Outside extends React.Component {
 
 	changeValue2 = () => {
 		this.setState(
-			{ val: " ", project: BLANK }
+			{ val: " ", project: BLANK, isCardView: true }
 		);
 	}
 
 	wrapperFunk = () => {
-		if (this.state.isCardView) {
+		if (!this.state.isCardView) {
 			this.setState(
-				{ project: PROJ, isCardView: false }
+				{ project: BLANK, isCardView: true }
 			);
 
 
 		} else {
 			this.setState(
-				{ project: BLANK, isCardView: true }
+				{ project: PROJ, isCardView: false }
 			);
 
 		}
@@ -46,7 +46,7 @@ class Outside extends React.Component {
 			<div className='divBoarder'>
 				<div className='divSec2'>
 					<div className='titleText'>
-						<h2>Projects</h2>
+						<h2>Highlighted Projects</h2>
 					</div>
 
 
@@ -54,12 +54,6 @@ class Outside extends React.Component {
 					<button className="buttonStyle" onClick={this.wrapperFunk}>
 						{this.state.isCardView ? <FaArrowDown /> : <FaArrowUp />}
 					</button>
-
-
-
-
-
-
 
 
 					<Projects project={this.state.project} />

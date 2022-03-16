@@ -2,37 +2,29 @@ import React from 'react';
 import Projects from './projects';
 import { PROJ } from '../shared/projects';
 import { BLANK } from '../shared/blank';
+import { COURSE } from '../shared/course';
 import { FaArrowUp, FaArrowDown, FaUps } from 'react-icons/fa';
+import CourseList from './courseList';
 
 class CourseWork extends React.Component {
 
 	constructor(props) {
 		super(props);
 
-		this.state = { val: " ", text: "", project: BLANK, isUp:true };
+		this.state = { val: " ", text: "", project: COURSE, isUp:false };
 	}
 
 
-	changeValue = () => {
-		this.setState(
-			{ text: "Input Info About Me Here", project: PROJ }
-		);
-	}
 
-	changeValue2 = () => {
-		this.setState(
-			{ val: " ", project: BLANK }
-		);
-	}
 
 	wrapperFunk = () => {
-		if(this.state.isUp){
+		if(!this.state.isUp){
 			this.setState(
-				{ val: " ", project: PROJ, isUp:false }
+				{ val: " ", project: BLANK, isUp:true }
 			);
 		}else{
 			this.setState(
-				{ text: "Input Info About Me Here", project: BLANK, isUp:true }
+				{ text: "Input Info About Me Here", project: COURSE, isUp:false }
 			);
 		}
 	}
@@ -51,7 +43,7 @@ class CourseWork extends React.Component {
 					</div>
 
 
-					<Projects project={this.state.project} />
+					<CourseList project={this.state.project} />
 
 
 				</div>
